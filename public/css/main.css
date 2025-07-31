@@ -1432,6 +1432,7 @@ width: 100%;
   align-items: center;
   padding-left: 10px;
   border-bottom: 2px solid;
+  text-decoration: none;
 }
 
 .image,

@@ -101,7 +101,7 @@ html(lang='en')
         a#aboutMe(href='/' style="border-bottom: solid #84ff0f 2px;")
           div#engAbout.toggle-element.visible About Me
           div#polAbout.pol.toggle-element O mnie
-        div(style="width:20px;border-bottom-right-radius: 10px; border-style: solid; border-color: #84ff0f; border-width: 0 2px 2px 0;")
+        div(style="width:5px;border-bottom-right-radius: 10px; border-style: solid; border-color: #84ff0f; border-width: 0 2px 2px 0;")
         .dropdown(style="background: none;")
           div#projects.bg
             a#projectsEng.services.toggle-element.visible Projects
@@ -113,6 +113,8 @@ html(lang='en')
             a#ai.service(href='/ai' onclick='hidemenu()')
               i.fas.fa-brain
             a#games.service(href='/games' onclick='hidemenu()')
+        a#chatbot(href='/chatbot')
+          | AI Chatbot
         div.filler(style="border-bottom-left-radius: 10px; border-left: solid #84ff0f 2px; border-bottom: solid #84ff0f 2px;")
         div#visits
           a#visitEng.visits.toggle-element.visible
