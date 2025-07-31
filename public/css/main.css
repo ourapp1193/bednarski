@@ -1319,11 +1319,11 @@ width: 100%;
     /* padding: 7px; */
   }
 
-  .menu .mail {
+  #center .mail {
     display: flex;
     position: fixed;
-    top: 3px;
-    left: 270px;
+    bottom: 20px;
+    left: 20px;
     color: #84ff0f;
   }
 
@@ -1419,9 +1419,19 @@ width: 100%;
 .mail {
   display: flex;
   position: fixed;
-  top: 3px;
-  left: 270px;
+  bottom: 20px;
+  left: 20px;
   color: #84ff0f;
+}
+
+#chatbot {
+  padding-right: 10px;
+  color: #84ff0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  border-bottom: 2px solid;
 }
 
 .image,

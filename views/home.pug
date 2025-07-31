@@ -79,7 +79,7 @@ html(lang='en')
         a#aboutMe.org(href='/').bg
           div#engAbout.toggle-element.visible About Me
           div#polAbout.pol.toggle-element O mnie
-        div(style="width:20px;border-bottom-left-radius: 10px; border-left: 2px solid #84ff0f; border-bottom: 2px solid #84ff0f;")
+        div(style="width:5px;border-bottom-left-radius: 10px; border-left: 2px solid #84ff0f; border-bottom: 2px solid #84ff0f;")
         .dropdown
           div#projects(style="border-bottom: 2px solid #84ff0f; box-sizing: border-box;")
             a#projectsEng.services.toggle-element.visible Projects
@@ -91,6 +91,8 @@ html(lang='en')
             a#ai.service(href='/ai' onclick='hidemenu()')
               i.fas.fa-brain
             a#games.service(href='/games' onclick='hidemenu()')
+        #chatbot
+          | AI Chatbot
         div.filler(style="border-bottom: 2px solid #84ff0f; box-sizing: border-box;")
         div#visits
           a#visitEng.visits.toggle-element.visible
@@ -99,9 +101,6 @@ html(lang='en')
           img(src='https://cdn.glitch.global/fa1cb8d5-4868-42bc-bf52-27fcc0455e8f/POL.jpg?v=1699542939034')#eng.toggle-element.visible
           img(src='https://cdn.glitch.global/fa1cb8d5-4868-42bc-bf52-27fcc0455e8f/UK.jpg?v=1699539920089')#pol.toggle-element 
         div.rightCorner
-        p.mail
-          i.fas.fa-envelope(style="margin-right: 8px; margin-top: 2px")
-          | a.bednarski@onet.pl  
     .main
       .mainContent
         #homeContent
@@ -177,6 +176,9 @@ html(lang='en')
               .svgText.last
                 i.icon-microchip
                 p.text Amesim
+          p.mail
+            i.fas.fa-envelope(style="margin-right: 8px; margin-top: 2px")
+            | a.bednarski@onet.pl      
     script(type='text/javascript').
       if (stored) {
         let storedViews = localStorage.getItem('views');
