@@ -8,3 +8,18 @@ async function send() {
     const data = await res.json();
     document.getElementById('response').innerText = data.reply;
 }
+const chat = document.getElementById('chat');
+function rec() {
+    const bubbleLeft = document.createElement('div');
+    bubbleLeft.classList.add('bubble', 'left');
+    bubbleLeft.textContent = 'rec';
+    chat.appendChild(bubbleLeft);
+
+}
+
+function sent() {
+    const bubbleRight = document.createElement('div');
+    bubbleRight.classList.add('bubble', 'right');
+    bubbleRight.textContent = 'sent';
+    chat.appendChild(bubbleRight);
+}

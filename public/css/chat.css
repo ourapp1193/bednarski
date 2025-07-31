@@ -1,0 +1,42 @@
+.bubble {
+    --r: 1em;
+    /* the radius */
+    --t: 1.5em;
+    /* the size of the tail */
+    align-self: flex-end;
+    max-width: 300px;
+    padding: 1em 1em 0.2em;
+    border-inline: var(--t) solid #0000;
+    border-radius: calc(var(--r) + var(--t))/var(--r);
+    mask:
+        radial-gradient(100% 100% at var(--_p) 0, #0000 99%, #000 102%) var(--_p) 100%/var(--t) var(--t) no-repeat,
+        linear-gradient(#000 0 0) padding-box;
+    color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    --_p: 0;
+    border-bottom-left-radius: 0 0;
+    align-self: end;
+    margin-right: 20px;
+    background: #87878a;
+}
+
+.right {
+    --_p: 100%;
+    border-bottom-right-radius: 0 0;
+    align-self: start;
+    margin-right: 20px;
+    background: #3d99c6;
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 80vw;
+    height: 70vh;
+}

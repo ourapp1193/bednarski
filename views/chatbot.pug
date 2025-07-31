@@ -68,6 +68,7 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet' href='public/css/main.css')
+    link(rel='stylesheet' href='public/css/chat.css')
     link(rel="stylesheet" href='public/css/fontello.css')
     title  My Projects
   body
@@ -105,14 +106,16 @@ html(lang='en')
       .mainContent
         #homeContent
           #center
-            h2 Chatbot AI
+            #chat
             textarea#prompt(rows='4' cols='60' placeholder='Zadaj pytanie...')
             br
             button(onclick='send()') Wy&sacute;lij
+            button(onclick='rec()') Wy&sacute;lij
+            button(onclick='sent()') Wy&sacute;lij
             pre#response.
-            p.mail
-              i.fas.fa-envelope(style="margin-right: 8px; margin-top: 2px")
-              | a.bednarski@onet.pl      
+            //- p.mail
+            //-   i.fas.fa-envelope(style="margin-right: 8px; margin-top: 2px")
+            //-   | a.bednarski@onet.pl      
     script(type='text/javascript').
       if (stored) {
         let storedViews = localStorage.getItem('views');
