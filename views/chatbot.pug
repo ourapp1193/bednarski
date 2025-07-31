@@ -1,0 +1,190 @@
+doctype html
+html(lang='en')
+  head
+    link(rel="preload" as="image" href="https://cdn.glitch.global/0c5397c2-8b81-453e-a90c-14d5c20cfd5d/bgg2.jpg?v=1744915037039")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css")
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+    link(rel="shortcut icon" href="https://cdn.glitch.global/0c5397c2-8b81-453e-a90c-14d5c20cfd5d/programming2.ico?v=1745001901470" sizes="768x768")
+    link(rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css")
+    script(type='text/javascript').
+      let views = 0;
+      let stored = false;
+      let prevURL;
+      const lastPageUrl = document.referrer; 
+      prevURL = lastPageUrl.toString();
+      currentURL = window.location.href;
+      currURL = currentURL.toString();
+      console.log(prevURL);
+      function updateCounter(type) {
+        return fetch('https://artur-bednarski.onrender.com/api?' + type)
+        .then((res) => res.json());
+      }
+      // Update counter on page load or refresh
+      if (performance.navigation.type === 1) {
+        updateCounter("type=visit-pageview")
+        .then((data) => {
+          views = data.pageviews;
+          const pageviewsCount = document.getElementById('visitEng');
+          const pageviewsCount1 = document.getElementById('visitPol');
+          if (pageviewsCount || pageviewsCount1) {
+            pageviewsCount.textContent = "Visits: " + views; // Display pageviews to the user
+            pageviewsCount1.textContent = "Wizyty: " + views;
+          }
+          sessionStorage.setItem("visit", "x");
+          // Store 'views' in localStorage
+          localStorage.setItem('views', views);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+      } else {
+        // If not a page load or refresh, check if it's a specific page
+        if (prevURL != 'https://artur-bednarski.onrender.com/applications' &&
+          prevURL != 'https://artur-bednarski.onrender.com/mechanics' &&
+          prevURL != 'https://artur-bednarski.onrender.com/games' &&
+          prevURL != 'https://artur-bednarski.onrender.com/') {
+          updateCounter("type=pageview")
+          .then((data) => {
+            views = data.pageviews;
+            const pageviewsCount = document.getElementById('visitEng');
+            const pageviewsCount1 = document.getElementById('visitPol');
+            if (pageviewsCount || pageviewsCount1) {
+              pageviewsCount.textContent = "Visits: " + views; // Display pageviews to the user
+              pageviewsCount1.textContent = "Wizyty: " + views;
+            }
+            // Store 'views' in localStorage
+            localStorage.setItem('views', views);
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+        } else {
+          stored = true;
+        }
+      }
+    //console.log(window.location.href);
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='public/css/main.css')
+    link(rel="stylesheet" href='public/css/fontello.css')
+    title  My Projects
+  body
+    img.code(src='https://cdn.glitch.global/0c5397c2-8b81-453e-a90c-14d5c20cfd5d/bgg2.jpg?v=1744915037039')
+    .content
+      .menu(style="positon: realtive;")
+        //- div.submenu
+        div.aboutLeft(style="border-bottom: solid 2px #84ff0f;")
+        a#aboutMe.org(href='/' style="border-bottom: solid 2px #84ff0f;").bg
+          div#engAbout.toggle-element.visible About Me
+          div#polAbout.pol.toggle-element O mnie
+        div(style="width:5px; border-bottom: 2px solid #84ff0f;")
+        .dropdown
+          div#projects(style="border-bottom: 2px solid #84ff0f; border-right: 2px solid #84ff0f; box-sizing: border-box; border-bottom-right-radius: 5px;")
+            a#projectsEng.services.toggle-element.visible Projects
+            a#projectsPol.services.toggle-element Projekty
+          .dropdown-content.hidden(style='display: none;')
+            a#apps.service(href="/applications" onclick='hidemenu()')
+              i.icon-laptop
+            a#mech.service(href='/mechanics' onclick='hidemenu()')
+            a#ai.service(href='/ai' onclick='hidemenu()')
+              i.fas.fa-brain
+            a#games.service(href='/games' onclick='hidemenu()')
+        a#chatbot(href='/chatbot' style="border-bottom: none;")
+          | AI Chatbot
+        div.filler(style="border-bottom: 2px solid #84ff0f; box-sizing: border-box; border-left: 2px solid #84ff0f; border-bottom-left-radius: 5px;")
+        div#visits
+          a#visitEng.visits.toggle-element.visible
+          a#visitPol.visits.toggle-element
+        div#lang(onclick="toggleElements()")
+          img(src='https://cdn.glitch.global/fa1cb8d5-4868-42bc-bf52-27fcc0455e8f/POL.jpg?v=1699542939034')#eng.toggle-element.visible
+          img(src='https://cdn.glitch.global/fa1cb8d5-4868-42bc-bf52-27fcc0455e8f/UK.jpg?v=1699539920089')#pol.toggle-element 
+        div.rightCorner
+    .main
+      .mainContent
+        #homeContent
+          #center
+            .typing-container
+              span#text
+              span.cursor _
+            .title.description
+              descriptionEng.toggle-element.visible Programming Languages
+              descriptionPol.toggle-element Języki programowania
+            .tools
+              .svgText.first
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg')
+                p.text JavaScript
+              .svgText
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg')
+                p.text Java
+              .svgText
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg')
+                p.text C++
+              .svgText.last
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg')
+                p.text Python
+            .title.description
+              descriptionEng.toggle-element.visible Frontend Development
+              descriptionPol.toggle-element Tworzenie front-endu
+            .tools
+              .svgText.first
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg')
+                p.text HTML5
+              .svgText
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg')
+                p.text CSS
+              .svgText.last
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg')
+                p.text React
+            .title.description
+              descriptionEng.toggle-element.visible Backend Development
+              descriptionPol.toggle-element Tworzenie back-endu
+            .tools
+              .svgText.first
+                img.logo(src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg")
+                p.text Node.js
+              .svgText
+                i.devicon-socketio-original(style="margin-left: 7px;")
+                p.text Socket.IO
+              .svgText
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg')
+                p.text SQLite
+              .svgText
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg')
+                p.text MySQL
+              .svgText.last
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg')
+                p.text PostgreSQL
+            .title.description
+              descriptionEng.toggle-element.visible Mobile Development
+              descriptionPol.toggle-element Tworzenie aplikacji mobilnych
+            .tools
+              .svgText(style="margin-left: auto; margin-right: auto;")
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg')
+                p.text Android
+            p.title.description 
+              descriptionEng.toggle-element.visible Electromechanical Software Development
+              descriptionPol.toggle-element Tworzenie oprogramowania elektromechanicznego
+            .tools(style="margin-bottom: 10px;")
+              .svgText.first
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/labview/labview-original.svg')
+                p.text LabVIEW
+              .svgText
+                img.logo(src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg')
+                p.text MATLAB
+              .svgText.last
+                i.icon-microchip
+                p.text Amesim
+          p.mail
+            i.fas.fa-envelope(style="margin-right: 8px; margin-top: 2px")
+            | a.bednarski@onet.pl      
+    script(type='text/javascript').
+      if (stored) {
+        let storedViews = localStorage.getItem('views');
+        document.getElementById('visitEng').textContent = "Visits: " + storedViews;
+        document.getElementById('visitPol').textContent = "Wizyty: " + storedViews;
+      }
+      a = 2;
+    script(src='public/dropdown.js')
+    script(src='public/type.js')

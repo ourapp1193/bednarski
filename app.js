@@ -10,6 +10,7 @@ const subpageRouter1 = require('./routes/applications'); // Import the subpage r
 const subpageRouter2 = require('./routes/mechanics');
 const subpageRouter3 = require('./routes/games');
 const subpageRouter4 = require('./routes/ai');
+const subpageRouter5 = require('./routes/chatbot');
 const app = express();
 app.use(cors()); // Prevents CORS error
 app.get('/api', function (req, res) {
@@ -61,4 +62,5 @@ app.use('/applications', subpageRouter1);
 app.use('/mechanics', subpageRouter2);
 app.use('/games', subpageRouter3);
 app.use('/ai', subpageRouter4);
+app.use('/chatbot', subpageRouter5);
 module.exports = app;
