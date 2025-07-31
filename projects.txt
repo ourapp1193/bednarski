@@ -1,0 +1,79 @@
+Project 1: WebSocket Chat Application
+
+- Description:
+  Developed a full-stack real-time chat application using Node.js, JavaScript, and WebSockets. Users can sign up, log in, send messages, block/unblock users, and upload avatars. Chat history and user info stored in SQLite3.
+
+- Key Features:
+  • Real-time messaging with WebSockets
+  • RESTful API for account management
+  • Circular avatar upload + image cropping
+  • Dynamic frontend with JavaScript
+  • Message filtering, blocking logic
+  • Deployed on Glitch and Render
+
+- Skills Used:
+  JavaScript, Node.js, WebSockets, SQLite3, CSS transitions, frontend-backend integration
+
+---
+
+Project 2: Career Agent Chatbot (WIP)
+
+- Description:
+  AI assistant prototype that informs employers about user's skills and portfolio based on structured `.txt` files. Designed to run on Ollama (local) and OpenRouter (remote), using local skill and project descriptions.
+
+- Key Features:
+  • Text-based skill parsing
+  • Structured prompt templates
+  • Plans for GPT-powered Q&A system
+  • Local testing with Ollama
+  • Render/OpenRouter deployment ready
+
+- Skills Used:
+  Python/Node.js, Prompt engineering, Ollama, OpenRouter, Markdown/txt formatting
+
+---
+
+Project 3: Personal Portfolio Website Generator
+
+- Description:
+  Tool for generating a personal portfolio/CV website from simple form inputs or `.json`/`.txt` data. Used HTML, CSS, JavaScript, and optional no-code integrations.
+
+- Key Features:
+  • Dynamic section rendering (About, Skills, Projects)
+  • No-framework, mobile-friendly layout
+  • Optional hosting on Netlify or Render
+  • Integrated visitor analytics prototype
+
+- Skills Used:
+  HTML/CSS, Vanilla JS, no-code tools, deployment automation
+
+---
+
+Project 4: PDF Report Generator with Playwright
+
+- Description:
+  Utility that takes HTML templates and generates high-quality PDFs using Playwright. Designed for generating CVs, invoices, or technical summaries with accurate rendering and print styles.
+
+- Key Features:
+  • Headless Chromium rendering
+  • Custom layout with Flexbox
+  • Auto-pagination and print preview support
+  • Bug fixes for border shadows and whitespace
+
+- Skills Used:
+  Node.js, Playwright, HTML/CSS
+
+---
+
+Project 5: Physics and Math Tutoring Platform (Prototype)
+
+- Description:
+  Prototype of an interactive tutoring platform for physics and math students. Includes problem sets, hint systems, and video integration. Initially used during personal tutoring sessions.
+
+- Key Features:
+  • Interactive problem walkthroughs
+  • Topic-specific modules (mechanics, circuits, matrices)
+  • Future plan to integrate GPT assistance
+
+- Skills Used:
+  HTML, JS, pedagogical design, tutoring experience

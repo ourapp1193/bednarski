@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -6,13 +7,17 @@ const flash = require('connect-flash');
 const routes = require('./routes/index');
 const cors = require('cors');
 const fs = require('fs');
+const axios = require('axios');
+
 const subpageRouter1 = require('./routes/applications'); // Import the subpage router
 const subpageRouter2 = require('./routes/mechanics');
 const subpageRouter3 = require('./routes/games');
 const subpageRouter4 = require('./routes/ai');
 const subpageRouter5 = require('./routes/chatbot');
 const app = express();
-app.use(cors()); // Prevents CORS error
+app.use(cors());
+app.use(bodyParser.json());
+
 app.get('/api', function (req, res) {
 
     if (req.url === '/favicon.ico') {
@@ -38,6 +43,56 @@ app.get('/api', function (req, res) {
     // Writes result to file and sends to user as JSON
 
 })
+
+// ✅ Load your data from text files
+const skills = fs.readFileSync('skills.txt', 'utf8');
+const projects = fs.readFileSync('projects.txt', 'utf8');
+
+// ✅ Use OpenRouter endpoint
+const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
+
+app.post('/chat', async (req, res) => {
+    const { message } = req.body;
+
+    const systemMessage = `
+You are a professional virtual assistant for Artur, a passionate and skilled software developer.
+Your role is to inform employers or clients about his programming experience, skills, and projects.
+Always refer to Artur in the third person and respond in a clear, confident, and friendly tone.
+`;
+
+    const fullPrompt = `
+A visitor has asked the assistant: "${message}"
+
+Use the following information to craft your answer.
+
+### Artur's Skills:
+${skills}
+
+### Artur's Projects:
+${projects}
+`;
+
+    try {
+        const response = await axios.post(OPENROUTER_URL, {
+            model: 'meta-llama/llama-3-8b-instruct', // or any other available model
+            messages: [
+                { role: 'system', content: systemMessage },
+                { role: 'user', content: fullPrompt }
+            ]
+        }, {
+            headers: {
+                Authorization: `Bearer ${process.env.CHAT}`,
+                'Content-Type': 'application/json'
+            }
+        });
+
+        const reply = response.data.choices[0].message.content;
+        res.json({ reply });
+    } catch (err) {
+        console.error('Chat error:', err.message);
+        res.status(500).json({ error: 'Failed to get response from OpenRouter' });
+    }
+});
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
