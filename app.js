@@ -80,7 +80,7 @@ ${projects}`
 
     try {
         const response = await axios.post(OPENROUTER_URL, {
-            model: 'openrouter/horizon-alpha',
+            model: 'cognitivecomputations/dolphin-mistral-24b-venice-edition:free',
             messages: [
                 { role: 'system', content: systemMessage },
                 { role: 'user', content: userContent }
