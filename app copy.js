@@ -45,7 +45,7 @@ app.get('/api', function (req, res) {
 })
 
 // ✅ Load your data from text files
-const skills = fs.readFileSync('skillz.txt', 'utf8');
+const skills = fs.readFileSync('skills.txt', 'utf8');
 const projects = fs.readFileSync('projects.txt', 'utf8');
 
 // ✅ Use OpenRouter endpoint
@@ -66,7 +66,7 @@ Always refer to Artur in the third person and respond in a clear, confident, and
 
 Use the following information to craft your answer.
 
-### Artur's Skills and Projects:
+### Artur's Skills:
 ${skills}
 
 ### Artur's Projects:

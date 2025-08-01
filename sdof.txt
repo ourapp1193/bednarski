@@ -1,0 +1,92 @@
+Neural Network for Damped Oscillation Prediction
+*C++ | Multithreading | Allegro5 Visualization | Custom ML Implementation*
+
+Core Functionality:
+
+Predicts endpoint of damped harmonic oscillations (A·sin(ωx)+B·cos(ωx))
+
+Implements backpropagation with ReLU/sigmoid activations
+
+Visualizes learning via real-time heatmaps using Allegro5
+
+Technical Highlights:
+✓ Custom Neural Net: 4-layer architecture (4-15-1) with thread-safe training
+✓ Optimization: Adaptive learning rate + gradient clipping
+✓ Visual Analytics: Live loss/weight heatmaps during training
+✓ Performance: 4x parallelized batch processing
+
+Key Skills Demonstrated:
+
+Low-level ML implementation (no frameworks)
+
+Multithreading (std::thread + mutex)
+
+Mathematical modeling of oscillations
+
+Real-time data visualization
+
+Unique Aspects:
+• Handles vanishing gradients via parameter restoration
+• Interactive prediction during runtime
+• Color-mapped output space visualization
+
+(298 tokens - easily adjustable if you need it shorter)
+
+This version:
+
+Focuses on employer-relevant technical details
+
+Uses compact notation with symbols for readability
+
+Highlights both theoretical (ML math) and practical (visualization) skills
+
+Want me to:
+
+Make it even shorter?
+
+Emphasize specific aspects?
+
+Add project outcomes/results?
+
+try shorter
+Here's a more concise version (150 words):
+
+Neural Network for Oscillation Prediction
+*C++ | ML from Scratch | Multithreading | Allegro5*
+
+Predicts damped harmonic motion endpoints using:
+
+Custom 4-layer NN (ReLU/sigmoid)
+
+Adaptive learning rate
+
+Parallel batch training
+
+Features:
+✓ Real-time visualization (heatmaps/plots)
+✓ Thread-safe backpropagation
+✓ Interactive predictions
+
+Skills Shown:
+
+Low-level ML implementation
+
+Math modeling (differential equations)
+
+Performance optimization
+
+(72 words)
+
+Or an ultra-compact version (50 words):
+
+Oscillation NN Predictor
+*C++ ML with Allegro5 viz*
+
+Custom neural net (4-15-1)
+
+Multithreaded training
+
+Real-time heatmaps
+
+Adaptive learning
+Skills: ML math, threading, visualization

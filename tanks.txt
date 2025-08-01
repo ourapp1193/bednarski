@@ -1,0 +1,59 @@
+Neural Network Tank Game
+JavaScript | Socket.io | p5.js | Custom ML
+
+Core Mechanics:
+
+Multiplayer tank battle with real-time physics
+
+Neural network (2 hidden layers) predicts shot trajectories
+
+Adapts to wind/distance using supervised learning
+
+Key Features:
+✓ Smart Aiming: NN learns from missed shots (Leaky ReLU activation)
+✓ Real-Time Sync: Socket.io for projectile/hit detection
+✓ Visual Analytics: Live loss graphs & NN visualization
+✓ Physics: Projectile arcs with wind/gravity
+
+Technical Highlights:
+
+Custom backpropagation with momentum
+
+Interpolated projectile rendering
+
+Explosion particle systems
+
+Responsive UI with life bars
+
+Skills Demonstrated:
+
+Online multiplayer networking
+
+Machine learning from scratch
+
+Game physics simulation
+
+Real-time data visualization
+
+
+--------------------------------
+
+Neural Network Tank Game
+JavaScript, Socket.io, p5.js, Custom ML
+
+Multiplayer tank game with physics-based shooting. A 2-layer neural network predicts shot trajectories and adapts to wind/distance using supervised learning. Features include:
+
+NN smart aiming (Leaky ReLU)
+
+Real-time sync via Socket.io
+
+Live loss graph & NN viz
+
+Projectile arcs with wind/gravity
+
+Custom backprop with momentum
+
+Explosions, life bars, and responsive UI
+
+Skills:
+Multiplayer networking, ML from scratch, physics simulation, real-time visualization

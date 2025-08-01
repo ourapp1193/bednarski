@@ -1,0 +1,84 @@
+AI Snake with Q-Learning
+C++ | SDL | Reinforcement Learning | Docker-Compatible
+
+Core Features:
+
+Q-learning algorithm with dynamic exploration rate
+
+State representation: position + direction + food location
+
+Collision avoidance with body/trail tracking
+
+Tech Stack:
+✓ AI: Custom state encoding (128x4 Q-table)
+✓ Visualization: SDL2 rendering (20x20 grid)
+✓ Training: Adaptive learning rate (0.1) + discount factor (0.95)
+✓ Deployment: Emscripten/WebAssembly + Docker support
+
+Key Optimizations:
+
+Dynamic exploration decay (1.0 → 0.0001)
+
+Reward shaping: food distance + body avoidance
+
+State pruning for efficient memory usage
+
+Performance Metrics:
+
+Tracks: Scores, Q-values, Lifetime rewards
+
+Web dashboard via Chart.js integration
+
+(98 words - optimized for chatbot memory)
+
+Key terms highlighted for recruiters:
+
+C++ (core implementation)
+
+Reinforcement Learning (Q-learning)
+
+SDL (graphics)
+
+Docker (deployment)
+
+WebAssembly (portability)
+
+Would you like me to:
+
+Make it even more concise?
+
+Emphasize specific technical aspects?
+
+Add performance benchmarks?
+
+try shorter
+AI Snake Game
+C++ | Q-Learning | SDL | Docker
+
+RL Snake with dynamic exploration
+
+State: position + direction + food
+
+Avoids collisions using trail memory
+
+Visualized with SDL2
+
+Docker-ready build
+
+Skills: RL, C++, game dev, optimization
+
+(38 words - ultra-concise)
+
+Or as bullet points:
+
+Q-learning AI snake
+
+C++17 & SDL2
+
+State encoding optimization
+
+Docker/WebAssembly compatible
+
+Reward shaping for faster learning
+
+(22 words - minimal)

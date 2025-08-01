@@ -1,0 +1,461 @@
+Express API that fetches job listings from Jooble and customizes a base CV for each offer using a local Ollama AI model(via HTTP).Receives search query and location, fetches jobs, and generates personalized CVs(txt format) by prompting the model to adapt a predefined CV.Each CV is saved to disk and returned alongside job info.Uses dotenv for config, logs requests, handles retries and timeouts.Supports static file access to saved CVs.Built -in error handling and development diagnostics.
+---
+MNIST Digit Recognition
+TensorFlow.js | CNN | Real-time Drawing
+
+Core Features:
+
+Recognizes handwritten digits (0-9) with 98%+ accuracy
+
+Custom CNN architecture (3 conv + 2 dense layers)
+
+Interactive canvas with preprocessing
+
+Tech Stack:
+✓ Model: BatchNorm + Dropout regularization
+✓ Training: Adam optimizer (15 epochs)
+✓ Visualization: Live accuracy/loss charts
+
+Key Processes:
+
+Centering digit via center-of-mass
+
+Confidence scoring for predictions
+
+Top-3 predictions visualization
+
+Deployment Ready:
+
+Model saving/loading functionality
+
+Mobile-friendly drawing interface
+
+Clean tensor disposal
+
+(82 words - optimized for chatbot memory)
+
+This version:
+
+Focuses on technical differentiators
+
+Uses symbols for quick scanning
+
+Highlights both ML and UX aspects
+
+Need it shorter? Here's a 50-word version:
+
+MNIST CNN Classifier
+TF.js | 98% Accuracy
+
+3-layer CNN with dropout
+
+Real-time digit centering
+
+Confidence visualization
+
+Model save/load support
+
+Clean tensor management
+Skills: Deep Learning, Computer Vision, WebML
+---
+React app detects O-ring flaws via camera. Uses local YOLOv5 ONNX model with onnxruntime-web (WASM backend, SIMD, 4 threads) for mobile. Worker loads model with fallback, runs inference asynchronously. Video frames preprocessed to Float32 tensor (normalized RGB), input size fixed. Outputs parsed into boxes with confidence filtering and NMS. Calibration allows physical size measurement in mm. Drawing overlays boxes on canvas with color-coded status and size labels. Runs inference every 200ms, manages processing state to prevent overlap. Switches camera front/back. Error handling and performance logging included.
+---
+Web app with canvas lets users draw curves, then fits a polynomial and trains a neural network using TensorFlow.js. Polynomial regression (degree 3) is computed manually (matrix math) and rendered on canvas. Neural net (2 hidden layers, ReLU) is trained to fit the same data, visualized via animated "rider" and Chart.js loss graph. Uses dense model with MSE loss and Adam optimizer. Training is done live in-browser with loss logged per epoch. Supports mouse/touch input. UI includes fixed loss chart and canvas drawing area.
+---
+Project 1: WebSocket Chat Application
+
+- Description:
+  Developed a full-stack real-time chat application using Node.js, JavaScript, and WebSockets. Users can sign up, log in, send messages, block/unblock users, and upload avatars. Chat history and user info stored in SQLite3.
+
+- Key Features:
+  • Real-time messaging with WebSockets
+  • RESTful API for account management
+  • Circular avatar upload + image cropping
+  • Dynamic frontend with JavaScript
+  • Message filtering, blocking logic
+  • Deployed on Glitch and Render
+
+- Skills Used:
+  JavaScript, Node.js, WebSockets, SQLite3, CSS transitions, frontend-backend integration
+
+---
+
+Project 2: Career Agent Chatbot (WIP)
+
+- Description:
+  AI assistant prototype that informs employers about user's skills and portfolio based on structured `.txt` files. Designed to run on Ollama (local) and OpenRouter (remote), using local skill and project descriptions.
+
+- Key Features:
+  • Text-based skill parsing
+  • Structured prompt templates
+  • Plans for GPT-powered Q&A system
+  • Local testing with Ollama
+  • Render/OpenRouter deployment ready
+
+- Skills Used:
+  Python/Node.js, Prompt engineering, Ollama, OpenRouter, Markdown/txt formatting
+
+---
+
+Project 3: Personal Portfolio Website Generator
+
+- Description:
+  Tool for generating a personal portfolio/CV website from simple form inputs or `.json`/`.txt` data. Used HTML, CSS, JavaScript, and optional no-code integrations.
+
+- Key Features:
+  • Dynamic section rendering (About, Skills, Projects)
+  • No-framework, mobile-friendly layout
+  • Optional hosting on Netlify or Render
+  • Integrated visitor analytics prototype
+
+- Skills Used:
+  HTML/CSS, Vanilla JS, no-code tools, deployment automation
+
+---
+
+Project 4: PDF Report Generator with Playwright
+
+- Description:
+  Utility that takes HTML templates and generates high-quality PDFs using Playwright. Designed for generating CVs, invoices, or technical summaries with accurate rendering and print styles.
+
+- Key Features:
+  • Headless Chromium rendering
+  • Custom layout with Flexbox
+  • Auto-pagination and print preview support
+  • Bug fixes for border shadows and whitespace
+
+- Skills Used:
+  Node.js, Playwright, HTML/CSS
+
+---
+
+Project 5: Physics and Math Tutoring Platform (Prototype)
+
+- Description:
+  Prototype of an interactive tutoring platform for physics and math students. Includes problem sets, hint systems, and video integration. Initially used during personal tutoring sessions.
+
+- Key Features:
+  • Interactive problem walkthroughs
+  • Topic-specific modules (mechanics, circuits, matrices)
+  • Future plan to integrate GPT assistance
+
+- Skills Used:
+  HTML, JS, pedagogical design, tutoring experience
+---
+Neural Network for Damped Oscillation Prediction
+*C++ | Multithreading | Allegro5 Visualization | Custom ML Implementation*
+
+Core Functionality:
+
+Predicts endpoint of damped harmonic oscillations (A·sin(ωx)+B·cos(ωx))
+
+Implements backpropagation with ReLU/sigmoid activations
+
+Visualizes learning via real-time heatmaps using Allegro5
+
+Technical Highlights:
+✓ Custom Neural Net: 4-layer architecture (4-15-1) with thread-safe training
+✓ Optimization: Adaptive learning rate + gradient clipping
+✓ Visual Analytics: Live loss/weight heatmaps during training
+✓ Performance: 4x parallelized batch processing
+
+Key Skills Demonstrated:
+
+Low-level ML implementation (no frameworks)
+
+Multithreading (std::thread + mutex)
+
+Mathematical modeling of oscillations
+
+Real-time data visualization
+
+Unique Aspects:
+• Handles vanishing gradients via parameter restoration
+• Interactive prediction during runtime
+• Color-mapped output space visualization
+
+(298 tokens - easily adjustable if you need it shorter)
+
+This version:
+
+Focuses on employer-relevant technical details
+
+Uses compact notation with symbols for readability
+
+Highlights both theoretical (ML math) and practical (visualization) skills
+
+Want me to:
+
+Make it even shorter?
+
+Emphasize specific aspects?
+
+Add project outcomes/results?
+
+try shorter
+Here's a more concise version (150 words):
+
+Neural Network for Oscillation Prediction
+*C++ | ML from Scratch | Multithreading | Allegro5*
+
+Predicts damped harmonic motion endpoints using:
+
+Custom 4-layer NN (ReLU/sigmoid)
+
+Adaptive learning rate
+
+Parallel batch training
+
+Features:
+✓ Real-time visualization (heatmaps/plots)
+✓ Thread-safe backpropagation
+✓ Interactive predictions
+
+Skills Shown:
+
+Low-level ML implementation
+
+Math modeling (differential equations)
+
+Performance optimization
+
+(72 words)
+
+Or an ultra-compact version (50 words):
+
+Oscillation NN Predictor
+*C++ ML with Allegro5 viz*
+
+Custom neural net (4-15-1)
+
+Multithreaded training
+
+Real-time heatmaps
+
+Adaptive learning
+Skills: ML math, threading, visualization
+---
+Project 1: WebSocket Chat Application
+
+- Description:
+  Developed a full-stack real-time chat application using Node.js, JavaScript, and WebSockets. Users can sign up, log in, send messages, block/unblock users, and upload avatars. Chat history and user info stored in SQLite3.
+
+- Key Features:
+  • Real-time messaging with WebSockets
+  • RESTful API for account management
+  • Circular avatar upload + image cropping
+  • Dynamic frontend with JavaScript
+  • Message filtering, blocking logic
+  • Deployed on Glitch and Render
+
+- Skills Used:
+  JavaScript, Node.js, WebSockets, SQLite3, CSS transitions, frontend-backend integration
+
+---
+
+Project 2: Career Agent Chatbot (WIP)
+
+- Description:
+  AI assistant prototype that informs employers about user's skills and portfolio based on structured `.txt` files. Designed to run on Ollama (local) and OpenRouter (remote), using local skill and project descriptions.
+
+- Key Features:
+  • Text-based skill parsing
+  • Structured prompt templates
+  • Plans for GPT-powered Q&A system
+  • Local testing with Ollama
+  • Render/OpenRouter deployment ready
+
+- Skills Used:
+  Python/Node.js, Prompt engineering, Ollama, OpenRouter, Markdown/txt formatting
+
+---
+
+Project 3: Personal Portfolio Website Generator
+
+- Description:
+  Tool for generating a personal portfolio/CV website from simple form inputs or `.json`/`.txt` data. Used HTML, CSS, JavaScript, and optional no-code integrations.
+
+- Key Features:
+  • Dynamic section rendering (About, Skills, Projects)
+  • No-framework, mobile-friendly layout
+  • Optional hosting on Netlify or Render
+  • Integrated visitor analytics prototype
+
+- Skills Used:
+  HTML/CSS, Vanilla JS, no-code tools, deployment automation
+
+---
+
+Project 4: PDF Report Generator with Playwright
+
+- Description:
+  Utility that takes HTML templates and generates high-quality PDFs using Playwright. Designed for generating CVs, invoices, or technical summaries with accurate rendering and print styles.
+
+- Key Features:
+  • Headless Chromium rendering
+  • Custom layout with Flexbox
+  • Auto-pagination and print preview support
+  • Bug fixes for border shadows and whitespace
+
+- Skills Used:
+  Node.js, Playwright, HTML/CSS
+
+---
+
+Project 5: Physics and Math Tutoring Platform (Prototype)
+
+- Description:
+  Prototype of an interactive tutoring platform for physics and math students. Includes problem sets, hint systems, and video integration. Initially used during personal tutoring sessions.
+
+- Key Features:
+  • Interactive problem walkthroughs
+  • Topic-specific modules (mechanics, circuits, matrices)
+  • Future plan to integrate GPT assistance
+
+- Skills Used:
+  HTML, JS, pedagogical design, tutoring experience
+---
+AI Snake with Q-Learning
+C++ | SDL | Reinforcement Learning | Docker-Compatible
+
+Core Features:
+
+Q-learning algorithm with dynamic exploration rate
+
+State representation: position + direction + food location
+
+Collision avoidance with body/trail tracking
+
+Tech Stack:
+✓ AI: Custom state encoding (128x4 Q-table)
+✓ Visualization: SDL2 rendering (20x20 grid)
+✓ Training: Adaptive learning rate (0.1) + discount factor (0.95)
+✓ Deployment: Emscripten/WebAssembly + Docker support
+
+Key Optimizations:
+
+Dynamic exploration decay (1.0 → 0.0001)
+
+Reward shaping: food distance + body avoidance
+
+State pruning for efficient memory usage
+
+Performance Metrics:
+
+Tracks: Scores, Q-values, Lifetime rewards
+
+Web dashboard via Chart.js integration
+
+(98 words - optimized for chatbot memory)
+
+Key terms highlighted for recruiters:
+
+C++ (core implementation)
+
+Reinforcement Learning (Q-learning)
+
+SDL (graphics)
+
+Docker (deployment)
+
+WebAssembly (portability)
+
+Would you like me to:
+
+Make it even more concise?
+
+Emphasize specific technical aspects?
+
+Add performance benchmarks?
+
+try shorter
+AI Snake Game
+C++ | Q-Learning | SDL | Docker
+
+RL Snake with dynamic exploration
+
+State: position + direction + food
+
+Avoids collisions using trail memory
+
+Visualized with SDL2
+
+Docker-ready build
+
+Skills: RL, C++, game dev, optimization
+
+(38 words - ultra-concise)
+
+Or as bullet points:
+
+Q-learning AI snake
+
+C++17 & SDL2
+
+State encoding optimization
+
+Docker/WebAssembly compatible
+
+Reward shaping for faster learning
+
+(22 words - minimal)
+---
+Neural Network Tank Game
+JavaScript | Socket.io | p5.js | Custom ML
+
+Core Mechanics:
+
+Multiplayer tank battle with real-time physics
+
+Neural network (2 hidden layers) predicts shot trajectories
+
+Adapts to wind/distance using supervised learning
+
+Key Features:
+✓ Smart Aiming: NN learns from missed shots (Leaky ReLU activation)
+✓ Real-Time Sync: Socket.io for projectile/hit detection
+✓ Visual Analytics: Live loss graphs & NN visualization
+✓ Physics: Projectile arcs with wind/gravity
+
+Technical Highlights:
+
+Custom backpropagation with momentum
+
+Interpolated projectile rendering
+
+Explosion particle systems
+
+Responsive UI with life bars
+
+Skills Demonstrated:
+
+Online multiplayer networking
+
+Machine learning from scratch
+
+Game physics simulation
+
+Real-time data visualization
+
+
+--------------------------------
+
+Neural Network Tank Game
+JavaScript, Socket.io, p5.js, Custom ML
+
+Multiplayer tank game with physics-based shooting. A 2-layer neural network predicts shot trajectories and adapts to wind/distance using supervised learning. Features include:
+
+NN smart aiming (Leaky ReLU)
+
+Real-time sync via Socket.io
+
+Live loss graph & NN viz
+
+Projectile arcs with wind/gravity
+
+Custom backprop with momentum
+
+Explosions, life bars, and responsive UI
+
+Skills:
+Multiplayer networking, ML from scratch, physics simulation, real-time visualization

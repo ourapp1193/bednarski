@@ -1,0 +1,33 @@
+AI & Machine Learning Projects
+1.	Express API CV Generator with Jooble Integration
+Node.js backend that fetches job listings and personalizes CVs using local Ollama LLM. Features structured prompting, file management, error logging, and retry logic. Demonstrates experience in REST APIs, AI integration, and automation.
+Includes advanced prompt engineering skills for GPT models (local and cloud), using context-aware templates for CV adaptation and content synthesis.
+2.	MNIST Digit Recognition with TensorFlow.js
+Browser-based digit classifier with interactive canvas. Achieves ~98% accuracy using a 3-layer CNN (BatchNorm, Dropout). Implements live training and persistent model storage. Highlights frontend ML and real-time interactivity.
+3.	AI Snake with Q-Learning
+C++ reinforcement learning agent trained to play Snake. Uses tabular Q-learning with SDL2 rendering. Supports Docker and WebAssembly builds for flexible deployment.
+4.	Damped Oscillation Neural Predictor
+C++ neural net trained to predict harmonic motion. Multithreaded training loop with Allegro5-based live visualization. Applies signal learning in physical systems.
+Interactive Simulations & Visual Tools
+5.	Interactive Curve Fitting Playground
+Web app comparing polynomial regression (matrix math) with neural nets (2-layer ReLU) on user-drawn data. Live visualization of training and curve fitting logic. Built with vanilla JS and TensorFlow.js.
+6.	O-Ring Flaw Detection React App
+Computer vision app using YOLOv5 ONNX (onnxruntime-web, SIMD). Processes live camera input in browser (200ms intervals), includes size calibration (mm), front/back camera switching, and canvas overlays. Optimized for mobile devices.
+7.	Neural Network Tank Game
+Multiplayer tank shooter using custom neural networks for projectile prediction. Real-time physics simulation with Socket.IO synchronization. Combines game mechanics with ML logic.
+Real-Time & Full-Stack Systems
+8.	WebSocket Chat Application
+Full-featured messaging platform with avatar uploads, SQLite storage, blocking logic, and real-time search. Written in Node.js + vanilla JS + WebSockets. Emphasizes server-side events and database integration.
+9.	Full Stack Web Development
+Production-grade applications using React, TypeScript, Node.js, and REST APIs. Experience with legacy PHP integration, WebSockets, Server-Sent Events, and auth logic. Includes build pipelines and deployment readiness.
+STEM / Simulation Projects
+10.	Physics/Math Tutoring Platform
+Interactive modules for mechanics, electrotechnics, and linear algebra. Focused on educational clarity and visual feedback. Plans for GPT-based interactive problem solving using guided prompts and system messages.
+11.	Mechatronic and Physics Simulation
+Projects in MATLAB, Simulink, LabVIEW, Numpy for modeling, control systems, and HIL testing. Applies strong background in mechatronics and system theory.
+12.	Process Automation Systems
+Backend tools using SQL Server and MongoDB for workflow automation, data parsing, and scheduled jobs. Emphasizes data-driven design and technical operations experience.
+Web Design & Mobile
+13.	Responsive Web Design Projects
+Mobile-first UI/UX with advanced CSS (Grid, Flexbox), responsive layouts, and accessibility. Tested across browsers and screen sizes. Includes experience in mobile development on Android.
+

@@ -1,0 +1,58 @@
+MNIST Digit Recognition
+TensorFlow.js | CNN | Real-time Drawing
+
+Core Features:
+
+Recognizes handwritten digits (0-9) with 98%+ accuracy
+
+Custom CNN architecture (3 conv + 2 dense layers)
+
+Interactive canvas with preprocessing
+
+Tech Stack:
+✓ Model: BatchNorm + Dropout regularization
+✓ Training: Adam optimizer (15 epochs)
+✓ Visualization: Live accuracy/loss charts
+
+Key Processes:
+
+Centering digit via center-of-mass
+
+Confidence scoring for predictions
+
+Top-3 predictions visualization
+
+Deployment Ready:
+
+Model saving/loading functionality
+
+Mobile-friendly drawing interface
+
+Clean tensor disposal
+
+(82 words - optimized for chatbot memory)
+
+This version:
+
+Focuses on technical differentiators
+
+Uses symbols for quick scanning
+
+Highlights both ML and UX aspects
+
+Need it shorter? Here's a 50-word version:
+
+MNIST CNN Classifier
+TF.js | 98% Accuracy
+
+3-layer CNN with dropout
+
+Real-time digit centering
+
+Confidence visualization
+
+Model save/load support
+
+Clean tensor management
+Skills: Deep Learning, Computer Vision, WebML
+
