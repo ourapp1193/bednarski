@@ -12,7 +12,7 @@ Interactive Simulations & Visual Tools
 5.	Interactive Curve Fitting Playground
 Web app comparing polynomial regression (matrix math) with neural nets (2-layer ReLU) on user-drawn data. Live visualization of training and curve fitting logic. Built with vanilla JS and TensorFlow.js.
 6.	O-Ring Flaw Detection React App
-Computer vision app using YOLOv5 ONNX (onnxruntime-web, SIMD). Processes live camera input in browser (200ms intervals), includes size calibration (mm), front/back camera switching, and canvas overlays. Optimized for mobile devices.
+Computer vision app using YOLOv5 ONNX Pytorch (onnxruntime-web, SIMD). Processes live camera input in browser (200ms intervals), includes size calibration (mm), front/back camera switching, and canvas overlays. Optimized for mobile devices.
 7.	Neural Network Tank Game
 Multiplayer tank shooter using custom neural networks for projectile prediction. Real-time physics simulation with Socket.IO synchronization. Combines game mechanics with ML logic.
 Real-Time & Full-Stack Systems
@@ -24,7 +24,7 @@ STEM / Simulation Projects
 10.	Physics/Math Tutoring Platform
 Interactive modules for mechanics, electrotechnics, and linear algebra. Focused on educational clarity and visual feedback. Plans for GPT-based interactive problem solving using guided prompts and system messages.
 11.	Mechatronic and Physics Simulation
-Projects in MATLAB, Simulink, LabVIEW, Numpy for modeling, control systems, and HIL testing. Applies strong background in mechatronics and system theory.
+Projects in MATLAB, Simulink, LabVIEW, Numpy (Python tools) for modeling, control systems, and HIL testing. Applies strong background in mechatronics and system theory.
 12.	Process Automation Systems
 Backend tools using SQL Server and MongoDB for workflow automation, data parsing, and scheduled jobs. Emphasizes data-driven design and technical operations experience.
 Web Design & Mobile

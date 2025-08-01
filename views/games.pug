@@ -111,9 +111,6 @@ html(lang='en')
           img(src='https://cdn.glitch.global/fa1cb8d5-4868-42bc-bf52-27fcc0455e8f/POL.jpg?v=1699542939034')#eng.toggle-element.visible
           img(src='https://cdn.glitch.global/fa1cb8d5-4868-42bc-bf52-27fcc0455e8f/UK.jpg?v=1699539920089')#pol.toggle-element 
         div.rightCorner
-        p.mail
-          i.fas.fa-envelope(style="margin-right: 8px; margin-top: 2px")
-          | a.bednarski@onet.pl  
     .main
       .mainContent
         #viewer
@@ -152,7 +149,7 @@ html(lang='en')
                           | Download
                         .downloadPol.toggle-element
                           | Pobierz
-              hr(style="margin-right: 20px; margin-left: 20px; margin-bottom: 0; margin-top: 0;")
+              
             div.project
               .projectTitle
                 | "TETRO SHOOTER"
@@ -183,7 +180,6 @@ html(lang='en')
                           | Download
                         .downloadPol.toggle-element
                           | Pobierz
-              hr(style="margin-right: 20px; margin-left: 20px; margin-bottom: 0; margin-top: 10px;")
             div.project
               .projectTitle
                 | "CRAZY SHOOTER"
@@ -211,7 +207,7 @@ html(lang='en')
                       i.icon-github-circled
                       p.borderContent
                         | GitHub
-              hr(style="margin-right: 20px; margin-left: 20px; margin-bottom: 0; margin-top: 0;")
+              
             div.project
               .projectTitle
                 | "MULTIPLAYER PONG"
@@ -239,7 +235,7 @@ html(lang='en')
                       i.icon-github-circled
                       p.borderContent
                         | GitHub
-              hr(style="margin-right: 20px; margin-left: 20px; margin-bottom: 0; margin-top: 0;")
+              
             div.project
               .projectTitle
                 | "GAMES ONLINE"
@@ -267,6 +263,9 @@ html(lang='en')
                       i.icon-github-circled
                       p.borderContent
                         | GitHub
+          p.mail
+            i.fas.fa-envelope(style="margin-right: 8px; margin-top: 2px")
+            | a.bednarski@onet.pl
     script(type='text/javascript').
       let storedViews = localStorage.getItem('views');
       document.getElementById('visitEng').textContent = "Visits: " + storedViews;

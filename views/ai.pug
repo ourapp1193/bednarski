@@ -113,9 +113,6 @@ html(lang='en')
           img(src='https://cdn.glitch.global/fa1cb8d5-4868-42bc-bf52-27fcc0455e8f/POL.jpg?v=1699542939034')#eng.toggle-element.visible
           img(src='https://cdn.glitch.global/fa1cb8d5-4868-42bc-bf52-27fcc0455e8f/UK.jpg?v=1699539920089')#pol.toggle-element 
         div.rightCorner
-        p.mail
-          i.fas.fa-envelope(style="margin-right: 8px; margin-top: 2px")
-          | a.bednarski@onet.pl 
     .main
       .mainContent
         #viewer
@@ -151,7 +148,7 @@ html(lang='en')
                       i.icon-globe
                       p.borderContent
                         | Link
-              hr(style="margin-right: 20px; margin-left: 20px; margin-bottom: 0; margin-top: 0;")
+              
             div.project
               .projectTitle
                 | "HANDWRITING RECOGNITION"
@@ -173,7 +170,7 @@ html(lang='en')
                       i.icon-github-circled
                       p.borderContent
                         | GitHub
-              hr(style="margin-right: 20px; margin-left: 20px; margin-bottom: 0; margin-top: 0;")
+              
             div.project
               .projectTitle
                 | "O-RING DETECTOR"
@@ -201,13 +198,13 @@ html(lang='en')
                       i.icon-globe
                       p.borderContent
                         | Link
-            hr(style="margin-right: 20px; margin-left: 20px; margin-bottom: 0; margin-top: 0;")
+            
             div.project
               .projectTitle
-                | "NEURAL NETWORK FOR BALLISTIC"
+                | "AI SNAKE"
               .imageDescription
                 .image
-                  img(src='/public/images/tank.png' onclick="display()").projectImg
+                  img(src='/public/images/snake_ai.png' onclick="display()").projectImg
                   i.fas.fa-expand.enlarge-icon
                 .description
                   | This AI Snake game implements a Q-learning algorithm to train a snake to navigate a 20x20 grid, collecting food while avoiding collisions with walls and its own body. The project features real-time visualization using SDL, dynamic exploration rates for balanced learning, and performance tracking with charts (for web builds). Key optimizations include penalties for the snake getting too close to its body, faster game speeds for quicker training, and a reward system that encourages efficient pathfinding. The snake learns from both positive rewards (food collection) and negative penalties (collisions, circling behavior), with the AI adapting its strategy over thousands of episodes. The code supports both native execution (with SDL) and web deployment via Emscripten, including live metrics for exploration rates, scores, and Q-values.
@@ -216,19 +213,22 @@ html(lang='en')
                   div.border.not
                     i.icon-cogs
                     p.borderContent
-                      | p5.js, Matter.js
-                a(href='https://github.com/arturr0/tank-rooms' target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;").git
+                      | C++, Docker
+                a(href='https://github.com/arturr0/snake-ai' target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;").git
                   .gitEng
                     div.border
                       i.icon-github-circled
                       p.borderContent
                         | GitHub
-                a(href='https://tank-rooms.onrender.com/' target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;").link
+                a(href='https://ai-snake-kfwm.onrender.com/' target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;").link
                   .linkEng
                     div.border
                       i.icon-globe
                       p.borderContent
                         | Link
+          p.mail
+            i.fas.fa-envelope(style="margin-right: 8px; margin-top: 2px")
+            | a.bednarski@onet.pl
     script(type='text/javascript').
       let storedViews = localStorage.getItem('views');
       document.getElementById('visitEng').textContent = "Visits: " + storedViews;

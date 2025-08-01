@@ -105,14 +105,14 @@ html(lang='en')
     .main
       .mainContent
         #homeContent
-          #center
+          #center(style="display: flex; flex-direction: column; justify-content: center;")
             #chat
-            textarea#prompt(rows='4' cols='60' placeholder='Zadaj pytanie...')
-            br
-            button(onclick='send()') Wy&sacute;lij
-            button(onclick='rec()') Wy&sacute;lij
-            button(onclick='sent()') Wy&sacute;lij
-            button(onclick='showTypingIndicator()') Wy&sacute;lij
+            textarea#prompt(rows='4' cols='60' placeholder='Ask about my skills and projects...', style="background: rgba(132, 255, 15, 0.5); color: black; border: none; border-radius: 10px;")
+            //- br
+            //- button(onclick='send()') Wy&sacute;lij
+            //- button(onclick='rec()') Wy&sacute;lij
+            //- button(onclick='sent()') Wy&sacute;lij
+            //- button(onclick='showTypingIndicator()') Wy&sacute;lij
             pre#response.
             //- p.mail
             //-   i.fas.fa-envelope(style="margin-right: 8px; margin-top: 2px")

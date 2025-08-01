@@ -164,9 +164,13 @@ function toggleElements() {
   const element2 = $('.toggle-element');
   if (eng) {
     $('.down').removeClass('Pol').addClass('Eng');
+    document.querySelector('#prompt')?.setAttribute('placeholder', 'Ask about my skills and projects...');
+
   }
   else {
     $('.down').removeClass('Eng').addClass('Pol');
+    document.querySelector('#prompt')?.setAttribute('placeholder', 'Zapytaj o moje umięjętności i projekty...');
+
   }
   // Toggle the visibility of both elements
   element1.toggleClass('visible');

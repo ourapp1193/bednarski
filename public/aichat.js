@@ -53,7 +53,7 @@ function hideTypingIndicator() {
 function appendUserBubble(text) {
     const bubbleRight = document.createElement('div');
     bubbleRight.classList.add('bubble', 'right');
-    bubbleRight.textContent = text;
+    bubbleRight.textContent = `<< ${text}`;
     chat.appendChild(bubbleRight);
 
     const rightBubbles = chat.querySelectorAll('.bubble.right');
@@ -67,7 +67,7 @@ function appendUserBubble(text) {
 function appendBotBubble(text) {
     const bubbleLeft = document.createElement('div');
     bubbleLeft.classList.add('bubble', 'left');
-    bubbleLeft.textContent = text;
+    bubbleLeft.textContent = `>> ${text}`;
     chat.appendChild(bubbleLeft);
 
     chat.scrollTop = chat.scrollHeight;

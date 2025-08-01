@@ -23,7 +23,7 @@
     border-bottom-left-radius: 0 0;
     align-self: end;
     margin-right: 20px;
-    background: #87878a;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .right {
@@ -31,7 +31,7 @@
     border-bottom-right-radius: 0 0;
     align-self: start;
     margin-right: 20px;
-    background: #3d99c6;
+    background: rgba(30, 37, 45, 0.6);
 }
 
 #chat {
@@ -40,4 +40,18 @@
     width: 80vw;
     height: 70vh;
     overflow: auto;
+}
+
+#prompt::placeholder {
+    color: black;
+    /* or any color you want */
+    opacity: 1;
+    /* optional, ensures full visibility */
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+#prompt {
+    font-weight: bolder;
+    font-size: 1.1rem;
 }
